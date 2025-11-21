@@ -150,46 +150,43 @@ Each girder is drawn as a separate 3D trace with hover values.
 
 ---
 
-###📦 Installation
-1️⃣ Clone the repository
+
+## 📦 **Installation**
+
+### **1️⃣ Clone the repository**
+
+```bash
 git clone <your-repo-url>
 cd project
+```
 
-2️⃣ Install dependencies
+### **2️⃣ Install all required Python packages**
 
-All required modules are listed in requirements.txt.
+Use the provided **requirements.txt**:
 
+```bash
 pip install -r requirements.txt
+```
 
-requirements.txt should contain
-plotly
-xarray
-numpy
-netCDF4
+### **3️⃣ Run the main program**
 
-
-(You can add others if needed.)
-
-▶️ How to Run
-
-Once dependencies are installed, simply run:
-
+```bash
 python main.py
+```
 
 
-This will:
-
-Load nodes.py & element.py
-
-Load screening_task.nc using xarray
 
 Generate:
+
+2d plot for central grider sfd
+2d bmd plot for central grider
 
 Interactive 3D SFD
 
 Interactive 3D BMD
 
-Open two Plotly windows with the diagrams
+Open two Plotly windows with the diagrams and also save it as html
+
 
 
 ## **Notes**

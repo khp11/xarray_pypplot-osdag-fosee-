@@ -150,46 +150,47 @@ Each girder is drawn as a separate 3D trace with hover values.
 
 ---
 
-## **Running the Script**
+###📦 Installation
+1️⃣ Clone the repository
+git clone <your-repo-url>
+cd project
 
-Run the file:
+2️⃣ Install dependencies
 
-```bash
-python plot_3d_bmd_sfd.py
-```
+All required modules are listed in requirements.txt.
 
-Two Plotly windows will appear:
+pip install -r requirements.txt
 
-### **1️⃣ 3D SFD View**
+requirements.txt should contain
+plotly
+xarray
+numpy
+netCDF4
 
-* Shows Shear Force Diagram (Vy)
-* Lifted sideways for visibility
 
-### **2️⃣ 3D BMD View**
+(You can add others if needed.)
 
-* Shows Bending Moment Diagram (Mz)
-* Also extruded sideways
+▶️ How to Run
 
-Both are fully interactive.
+Once dependencies are installed, simply run:
 
----
+python main.py
 
-## **Output Preview**
 
-You will see something like:
+This will:
 
-* Multi-colored girder curves
-* SFD/BMD extruded in Y-direction
-* Smooth 3D view of entire superstructure
-* Hover tooltip:
+Load nodes.py & element.py
 
-  ```
-  Node 45
-  X = 17.250
-  Mz = -102.452
-  ```
+Load screening_task.nc using xarray
 
----
+Generate:
+
+Interactive 3D SFD
+
+Interactive 3D BMD
+
+Open two Plotly windows with the diagrams
+
 
 ## **Notes**
 
